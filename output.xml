@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170418 18:45:34.908" generator="Robot 3.0 (Python 2.7.12 on darwin)">
+<suite source="/Users/shashidhara/Documents/workspace/ANDROID-JIYO" id="s1" name="ANDROID-JIYO">
+<suite source="/Users/shashidhara/Documents/workspace/ANDROID-JIYO/Testcases" id="s1-s1" name="Testcases">
+<suite source="/Users/shashidhara/Documents/workspace/ANDROID-JIYO/Testcases/JIYOandroid.robot" id="s1-s1-s1" name="JIYOandroid">
+<test id="s1-s1-s1-t1" name="Testcase-08-Post a bit with stitch">
+<kw type="setup" name="JIYO LOGIN" library="JIYOlogin">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformVersion=6.0.1</arg>
+<arg>deviceName=Motorola</arg>
+<arg>appPackage=com.jiyo.android</arg>
+<arg>app=/Users/shashidhara/Documents/workspace/ANDROID-JIYO/JIYOapp/jiyo-release.apk</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:45:51.031" starttime="20170418 18:45:35.360"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:45:56.034" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:45:56.034" starttime="20170418 18:45:51.032"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:45:56.176" starttime="20170418 18:45:56.035"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-LOGIN-01.png</arg>
+</arguments>
+<msg timestamp="20170418 18:45:58.014" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-LOGIN-01.png"&gt;&lt;img src="ScreenShots/JIYO-LOGIN-01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:45:58.015" starttime="20170418 18:45:56.177"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:45:58.016" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:01.234" starttime="20170418 18:45:58.016"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]</arg>
+<arg>shashidhara.vn@above-inc.com</arg>
+</arguments>
+<msg timestamp="20170418 18:46:01.237" level="INFO">Typing text 'shashidhara.vn@above-inc.com' into text field '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" endtime="20170418 18:46:06.450" starttime="20170418 18:46:01.236"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[2]/android.widget.FrameLayout[1]/android.widget.EditText[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:06.451" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[2]/android.widget.FrameLayout[1]/android.widget.EditText[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:07.155" starttime="20170418 18:46:06.451"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[2]/android.widget.FrameLayout[1]/android.widget.EditText[1]</arg>
+<arg>jiyotest1234</arg>
+</arguments>
+<msg timestamp="20170418 18:46:07.157" level="INFO">Typing text 'jiyotest1234' into text field '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[2]/android.widget.FrameLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" endtime="20170418 18:46:12.933" starttime="20170418 18:46:07.156"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-LOGIN-02.png</arg>
+</arguments>
+<msg timestamp="20170418 18:46:14.874" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-LOGIN-02.png"&gt;&lt;img src="ScreenShots/JIYO-LOGIN-02.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:46:14.875" starttime="20170418 18:46:12.934"></status>
+</kw>
+<kw name="Hide Keyboard" library="AppiumLibrary">
+<doc>Hides the software keyboard on the device. (optional) In iOS, use `key_name` to press</doc>
+<status status="PASS" endtime="20170418 18:46:15.141" starttime="20170418 18:46:14.876"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:17.143" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:17.144" starttime="20170418 18:46:15.142"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:17.146" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:17.611" starttime="20170418 18:46:17.145"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:20.613" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:20.614" starttime="20170418 18:46:17.612"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:20.617" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[2]'.</msg>
+<status status="PASS" endtime="20170418 18:46:21.635" starttime="20170418 18:46:20.616"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:24.640" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:24.641" starttime="20170418 18:46:21.637"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:24.643" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:25.005" starttime="20170418 18:46:24.642"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:28.008" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:28.009" starttime="20170418 18:46:25.006"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:28.011" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:28.493" starttime="20170418 18:46:28.010"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:46:28.494" starttime="20170418 18:45:35.358"></status>
+</kw>
+<kw name="TC08-01-Navigate to JIYO-ME screen" library="JIYOobjectRepo">
+<kw name="Navigate to JIYO-ME" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:31.502" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:31.503" starttime="20170418 18:46:28.497"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:46:31.678" starttime="20170418 18:46:31.504"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:31.679" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]'.</msg>
+<status status="PASS" endtime="20170418 18:46:32.291" starttime="20170418 18:46:31.679"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:37.294" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:37.295" starttime="20170418 18:46:32.292"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITS01.png</arg>
+</arguments>
+<msg timestamp="20170418 18:46:39.172" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITS01.png"&gt;&lt;img src="ScreenShots/JIYO-BITS01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:46:39.173" starttime="20170418 18:46:37.296"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:39.175" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:42.346" starttime="20170418 18:46:39.174"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:46:42.347" starttime="20170418 18:46:28.495"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:46:42.348" starttime="20170418 18:46:28.495"></status>
+</kw>
+<kw name="TC08-02-Schedule a BIT" library="JIYOobjectRepo">
+<kw name="BIT Schedule" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:48.352" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:48.353" starttime="20170418 18:46:42.351"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:48.363" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:46:48.836" starttime="20170418 18:46:48.354"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:46:54.838" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:46:54.838" starttime="20170418 18:46:48.837"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.CheckedTextView[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:46:54.840" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.CheckedTextView[2]'.</msg>
+<status status="PASS" endtime="20170418 18:46:55.055" starttime="20170418 18:46:54.839"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:01.058" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:01.058" starttime="20170418 18:46:55.056"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.Button[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:01.060" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.Button[2]'.</msg>
+<status status="PASS" endtime="20170418 18:47:01.568" starttime="20170418 18:47:01.059"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:07.571" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:07.572" starttime="20170418 18:47:01.569"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.Button[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:07.574" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.Button[2]'.</msg>
+<status status="PASS" endtime="20170418 18:47:10.825" starttime="20170418 18:47:07.573"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:16.829" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:16.829" starttime="20170418 18:47:10.827"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:47:16.830" starttime="20170418 18:46:42.350"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:47:16.831" starttime="20170418 18:46:42.349"></status>
+</kw>
+<kw name="TC08-03-Select latest bit which is not yet completed and navigate to bit details page" library="JIYOobjectRepo">
+<kw name="Select latest bit" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:21.837" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:21.838" starttime="20170418 18:47:16.834"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:47:22.003" starttime="20170418 18:47:21.839"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:22.005" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]'.</msg>
+<status status="PASS" endtime="20170418 18:47:22.335" starttime="20170418 18:47:22.004"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:28.337" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:28.338" starttime="20170418 18:47:22.336"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITSO3.png</arg>
+</arguments>
+<msg timestamp="20170418 18:47:30.382" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITSO3.png"&gt;&lt;img src="ScreenShots/JIYO-BITSO3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:47:30.382" starttime="20170418 18:47:28.338"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:30.385" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]'.</msg>
+<status status="PASS" endtime="20170418 18:47:33.596" starttime="20170418 18:47:30.385"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:36.600" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:36.601" starttime="20170418 18:47:33.597"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:47:36.601" starttime="20170418 18:47:16.833"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:47:36.602" starttime="20170418 18:47:16.832"></status>
+</kw>
+<kw name="TC08-04-Click on RIGHT icon on the BIT" library="JIYOobjectRepo">
+<kw name="RIGHT icon" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:40.607" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:40.608" starttime="20170418 18:47:36.606"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:47:40.688" starttime="20170418 18:47:40.609"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:40.689" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]'.</msg>
+<status status="PASS" endtime="20170418 18:47:41.477" starttime="20170418 18:47:40.689"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:45.480" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:45.480" starttime="20170418 18:47:41.479"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITSO4.png</arg>
+</arguments>
+<msg timestamp="20170418 18:47:47.509" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITSO4.png"&gt;&lt;img src="ScreenShots/JIYO-BITSO4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:47:47.510" starttime="20170418 18:47:45.481"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:47.511" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]'.</msg>
+<status status="PASS" endtime="20170418 18:47:50.726" starttime="20170418 18:47:47.511"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:53.730" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:53.730" starttime="20170418 18:47:50.728"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:47:53.731" starttime="20170418 18:47:36.605"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:47:53.732" starttime="20170418 18:47:36.603"></status>
+</kw>
+<kw name="TC08-05-Read BIT" library="JIYOobjectRepo">
+<kw name="Read Bit" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:47:59.738" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:47:59.739" starttime="20170418 18:47:53.735"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:47:59.741" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:48:02.973" starttime="20170418 18:47:59.740"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:07.975" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:07.976" starttime="20170418 18:48:02.974"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:48:08.051" starttime="20170418 18:48:07.977"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:13.053" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:13.054" starttime="20170418 18:48:08.051"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITSO5.png</arg>
+</arguments>
+<msg timestamp="20170418 18:48:15.480" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITSO5.png"&gt;&lt;img src="ScreenShots/JIYO-BITSO5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:48:15.481" starttime="20170418 18:48:13.055"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:48:15.482" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.Button[1]'.</msg>
+<status status="PASS" endtime="20170418 18:48:18.696" starttime="20170418 18:48:15.482"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:22.700" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:22.700" starttime="20170418 18:48:18.698"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:22.701" starttime="20170418 18:47:53.734"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:22.702" starttime="20170418 18:47:53.733"></status>
+</kw>
+<kw name="TC08-06-Tap on Image link on left to get changed to video" library="JIYOobjectRepo">
+<kw name="Tap on image-b" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:25.707" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:25.708" starttime="20170418 18:48:22.705"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:48:25.710" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:48:26.172" starttime="20170418 18:48:25.709"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-moment-17.png</arg>
+</arguments>
+<msg timestamp="20170418 18:48:30.195" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-moment-17.png"&gt;&lt;img src="ScreenShots/JIYO-moment-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:48:30.197" starttime="20170418 18:48:26.174"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:32.199" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:32.200" starttime="20170418 18:48:30.198"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:32.201" starttime="20170418 18:48:22.704"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:32.203" starttime="20170418 18:48:22.703"></status>
+</kw>
+<kw name="TC08-07-Press and hold green button for 2 seconds to start stitch" library="JIYOobjectRepo">
+<kw name="Press and hold green button-b" library="JIYObits">
+<kw name="Long Press" library="AppiumLibrary">
+<doc>Long press the element</doc>
+<arguments>
+<arg>xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[2]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:48:33.350" starttime="20170418 18:48:32.206"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:36.354" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:36.355" starttime="20170418 18:48:33.352"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-moment-19.png</arg>
+</arguments>
+<msg timestamp="20170418 18:48:40.750" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-moment-19.png"&gt;&lt;img src="ScreenShots/JIYO-moment-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:48:40.751" starttime="20170418 18:48:36.356"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:40.752" starttime="20170418 18:48:32.205"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:40.753" starttime="20170418 18:48:32.204"></status>
+</kw>
+<kw name="TC08-08-Tap on red color button to stop stitch" library="JIYOobjectRepo">
+<kw name="Tap on Red Button-b" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:46.759" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:46.759" starttime="20170418 18:48:40.757"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:48:46.762" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[2]'.</msg>
+<status status="PASS" endtime="20170418 18:48:47.897" starttime="20170418 18:48:46.761"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:50.901" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:50.902" starttime="20170418 18:48:47.898"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-moment-18.png</arg>
+</arguments>
+<msg timestamp="20170418 18:48:53.761" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-moment-18.png"&gt;&lt;img src="ScreenShots/JIYO-moment-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:48:53.762" starttime="20170418 18:48:50.903"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:48:56.765" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:48:56.766" starttime="20170418 18:48:53.763"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:56.767" starttime="20170418 18:48:40.755"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:48:56.767" starttime="20170418 18:48:40.754"></status>
+</kw>
+<kw name="TC08-09-Tag User to stitch" library="JIYOobjectRepo">
+<kw name="TAG user-b" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:01.782" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:01.783" starttime="20170418 18:48:56.779"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[3]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:49:01.959" starttime="20170418 18:49:01.784"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[3]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:01.960" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[3]'.</msg>
+<status status="PASS" endtime="20170418 18:49:02.309" starttime="20170418 18:49:01.960"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:07.313" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:07.314" starttime="20170418 18:49:02.310"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITS-09.png</arg>
+</arguments>
+<msg timestamp="20170418 18:49:09.168" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITS-09.png"&gt;&lt;img src="ScreenShots/JIYO-BITS-09.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:49:09.169" starttime="20170418 18:49:07.315"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:49:09.257" starttime="20170418 18:49:09.170"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:09.258" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'.</msg>
+<status status="PASS" endtime="20170418 18:49:09.500" starttime="20170418 18:49:09.257"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:12.502" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:12.503" starttime="20170418 18:49:09.501"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]</arg>
+<arg>Rashmi</arg>
+</arguments>
+<msg timestamp="20170418 18:49:12.505" level="INFO">Typing text 'Rashmi' into text field '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" endtime="20170418 18:49:17.611" starttime="20170418 18:49:12.504"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:49:19.486" starttime="20170418 18:49:17.612"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITS-10.png</arg>
+</arguments>
+<msg timestamp="20170418 18:49:21.269" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITS-10.png"&gt;&lt;img src="ScreenShots/JIYO-BITS-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:49:21.270" starttime="20170418 18:49:19.488"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:21.271" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]'.</msg>
+<status status="PASS" endtime="20170418 18:49:21.485" starttime="20170418 18:49:21.270"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:26.487" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:26.487" starttime="20170418 18:49:21.486"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITS-11.png</arg>
+</arguments>
+<msg timestamp="20170418 18:49:28.289" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITS-11.png"&gt;&lt;img src="ScreenShots/JIYO-BITS-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:49:28.290" starttime="20170418 18:49:26.489"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:28.291" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]'.</msg>
+<status status="PASS" endtime="20170418 18:49:28.855" starttime="20170418 18:49:28.291"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:32.859" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:32.859" starttime="20170418 18:49:28.856"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:49:32.861" starttime="20170418 18:48:56.778"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:49:32.862" starttime="20170418 18:48:56.777"></status>
+</kw>
+<kw name="TC08-10-Click on Done (Check) button" library="JIYOobjectRepo">
+<kw name="POST Moment-b" library="JIYObits">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:38.876" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:38.877" starttime="20170418 18:49:32.873"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[3]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:49:38.926" starttime="20170418 18:49:38.880"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[3]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:38.927" level="INFO">Clicking element '//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[3]'.</msg>
+<status status="PASS" endtime="20170418 18:49:39.989" starttime="20170418 18:49:38.927"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:42.991" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:42.992" starttime="20170418 18:49:39.990"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITS-13.png</arg>
+</arguments>
+<msg timestamp="20170418 18:49:45.348" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITS-13.png"&gt;&lt;img src="ScreenShots/JIYO-BITS-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:49:45.349" starttime="20170418 18:49:42.993"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:49:45.349" starttime="20170418 18:49:32.872"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:49:45.350" starttime="20170418 18:49:32.863"></status>
+</kw>
+<kw name="TC08-11-After upload, Navigate to Me screen Journey" library="JIYOobjectRepo">
+<kw name="Me Screen Journey-b" library="JIYObits">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]/android.widget.ImageView[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:49:45.548" starttime="20170418 18:49:45.405"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:45.551" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:49:46.051" starttime="20170418 18:49:45.550"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:49:51.055" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:49:51.055" starttime="20170418 18:49:46.053"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.FrameLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:49:51.196" starttime="20170418 18:49:51.056"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.FrameLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:49:51.197" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.FrameLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]'.</msg>
+<status status="PASS" endtime="20170418 18:49:51.563" starttime="20170418 18:49:51.197"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-BITS-14.png</arg>
+</arguments>
+<msg timestamp="20170418 18:49:54.105" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-BITS-14.png"&gt;&lt;img src="ScreenShots/JIYO-BITS-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:49:54.106" starttime="20170418 18:49:51.564"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:49:54.106" starttime="20170418 18:49:45.351"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:49:54.107" starttime="20170418 18:49:45.351"></status>
+</kw>
+<kw name="TC08-12-Verify Uploading card in Home feed" library="JIYOobjectRepo">
+<kw name="Verify Uploading card" library="JIYOmoment">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:02.112" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:02.113" starttime="20170418 18:49:54.109"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:50:02.525" starttime="20170418 18:50:02.114"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-moment-13.png</arg>
+</arguments>
+<msg timestamp="20170418 18:50:05.080" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-moment-13.png"&gt;&lt;img src="ScreenShots/JIYO-moment-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:50:05.081" starttime="20170418 18:50:02.526"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:50:05.082" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]'.</msg>
+<status status="PASS" endtime="20170418 18:50:05.523" starttime="20170418 18:50:05.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:10.526" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:10.526" starttime="20170418 18:50:05.524"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>filename=ScreenShots/JIYO-moment-14.png</arg>
+</arguments>
+<msg timestamp="20170418 18:50:13.344" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/JIYO-moment-14.png"&gt;&lt;img src="ScreenShots/JIYO-moment-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170418 18:50:13.345" starttime="20170418 18:50:10.527"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.view.ViewGroup[1]/android.widget.ImageButton[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:50:13.346" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.view.ViewGroup[1]/android.widget.ImageButton[1]'.</msg>
+<status status="PASS" endtime="20170418 18:50:14.206" starttime="20170418 18:50:13.345"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:19.209" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:19.209" starttime="20170418 18:50:14.208"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:50:19.210" starttime="20170418 18:49:54.108"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:50:19.211" starttime="20170418 18:49:54.107"></status>
+</kw>
+<kw type="teardown" name="JIYO Logout" library="JIYOlogin">
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:50:19.215" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[5]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:50:22.571" starttime="20170418 18:50:19.214"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:25.574" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:25.574" starttime="20170418 18:50:22.572"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.ImageView[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:50:25.577" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.ImageView[1]'.</msg>
+<status status="PASS" endtime="20170418 18:50:25.876" starttime="20170418 18:50:25.576"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:28.878" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:28.879" starttime="20170418 18:50:25.877"></status>
+</kw>
+<kw name="Scroll" library="AppiumLibrary">
+<doc>Scrolls from one element to another</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[11]/android.widget.TextView[1]</arg>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170418 18:50:29.553" starttime="20170418 18:50:28.881"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:32.555" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:32.556" starttime="20170418 18:50:29.553"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[12]/android.widget.RelativeLayout[1]</arg>
+</arguments>
+<msg timestamp="20170418 18:50:32.558" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[12]/android.widget.RelativeLayout[1]'.</msg>
+<status status="PASS" endtime="20170418 18:50:32.981" starttime="20170418 18:50:32.557"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:35.983" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:35.984" starttime="20170418 18:50:32.982"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.Button[2]</arg>
+</arguments>
+<msg timestamp="20170418 18:50:35.986" level="INFO">Clicking element '//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v7.widget.LinearLayoutCompat[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.Button[2]'.</msg>
+<status status="PASS" endtime="20170418 18:50:36.517" starttime="20170418 18:50:35.985"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170418 18:50:38.520" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170418 18:50:38.521" starttime="20170418 18:50:36.518"></status>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" endtime="20170418 18:50:42.457" starttime="20170418 18:50:38.522"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:50:42.458" starttime="20170418 18:50:19.212"></status>
+</kw>
+<status status="PASS" endtime="20170418 18:50:42.458" critical="yes" starttime="20170418 18:45:35.357"></status>
+</test>
+<status status="PASS" endtime="20170418 18:50:42.460" starttime="20170418 18:45:34.982"></status>
+</suite>
+<status status="PASS" endtime="20170418 18:50:42.465" starttime="20170418 18:45:34.974"></status>
+</suite>
+<status status="PASS" endtime="20170418 18:50:42.468" starttime="20170418 18:45:34.933"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="ANDROID-JIYO" pass="1">ANDROID-JIYO</stat>
+<stat fail="0" id="s1-s1" name="Testcases" pass="1">ANDROID-JIYO.Testcases</stat>
+<stat fail="0" id="s1-s1-s1" name="JIYOandroid" pass="1">ANDROID-JIYO.Testcases.JIYOandroid</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
