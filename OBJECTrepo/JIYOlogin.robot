@@ -26,7 +26,7 @@ ${APP_LOCATION}      ${CURDIR}/JIYOapp/jiyo-release.apk
 
 JIYO LOGIN
 
-            Open Application	${REMOTE_URL}    platformVersion=${PLATFORM_VERSION}	platformName=Android    deviceName=${DEVICE_NAME}    appPackage=com.jiyo.android    app=${APP_LOCATION}		  
+            Open Application	${REMOTE_URL}    platformVersion=${PLATFORM_VERSION}	platformName=Android    deviceName=${DEVICE_NAME}    appPackage=com.jiyo.android	app=${APP_LOCATION}	noReset=true	fullReset=false		  
             Sleep   5s
             
             Wait Until Page Contains Element        xpath=//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/TextInputLayout[1]/android.widget.FrameLayout[1]/android.widget.EditText[1]            
